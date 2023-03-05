@@ -34,3 +34,12 @@ reference: [知乎：用git创建本地仓库并上传到Github](https://zhuanla
 创建一个与本地仓库同名的线上仓库，并复制它下面的远程连接代码将本地与github链接
 
 ![远程代码演示](https://pic4.zhimg.com/v2-4737360fa603c5709b3d3ab131012083_r.jpg "远程代码演示")
+
+## 6. 已有仓库，进行后续代码的更新
+
+在更新前，先用`git pull`将线上仓库的代码更新到本地，确保两端信息同步
+
+之后使用以下指令组合完成：
+* `git add .`: 将所有更新添加至上传序列
+* `git commit -m "type some annotation"`: 将代码传至push进程中
+* `git push`: 将代码传至线上repo
